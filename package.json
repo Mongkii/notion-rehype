@@ -1,0 +1,33 @@
+{
+  "name": "notion-rehype",
+  "version": "1.1.0",
+  "description": "Turn Notion blocks(from API) into rehype(hast), so you can make the most of the rich rehype ecosystem.",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "notion",
+    "rehype",
+    "unified",
+    "plugin",
+    "html"
+  ],
+  "author": "Mongkii",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/hast": "^2.3.4",
+    "hast": "^1.0.0",
+    "rehype-raw": "^6.1.1",
+    "rehype-stringify": "^9.0.3",
+    "typescript": "^4.7.4",
+    "unified": "^10.1.2",
+    "vfile": "^5.3.4"
+  }
+}
