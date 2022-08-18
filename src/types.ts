@@ -4,7 +4,7 @@ export interface Options {
   notionPrefix?: string;
   enableNestedParagraph?: boolean;
   enableBlockId?: boolean;
-  convertRawHtml?: (richTextObj: any) => string;
+  convertRawHtml?: (richTextObj: any) => string | false | undefined | null;
   pageReference?: { [pageId: string]: any };
   footnoteReference?: { [blockId: string]: any };
   footnoteTitle?: string;
