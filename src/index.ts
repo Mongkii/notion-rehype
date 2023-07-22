@@ -1,5 +1,5 @@
-import { type Plugin } from 'unified';
-import { type VFile } from 'vfile';
+import type { Plugin } from 'unified';
+import type { VFile } from 'vfile';
 
 import { notionToHast } from './notion-to-hast.js';
 import { Options } from './types.js';

@@ -1,4 +1,4 @@
-import { Element, Root } from 'hast';
+import type { Element, Root } from 'hast';
 
 import { getBlockHast } from './index.js';
 import { h, addClassToHast, notionPrefixFactory, groupBlocks } from '../utils.js';

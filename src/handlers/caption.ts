@@ -2,7 +2,7 @@ import { h, addClassToHast, notionPrefixFactory } from '../utils.js';
 import handleRichText from './rich-text.js';
 
 import { Context } from '../types.js';
-import { Element } from 'hast';
+import type { Element } from 'hast';
 
 const handler = (context: Context, captionObjs: any[]) => {
   const captionClass = notionPrefixFactory(context)('caption');
