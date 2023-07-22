@@ -22,7 +22,7 @@ const getHastsWithBr = (text: string) => {
   const result: (Element | Text)[] = [];
   for (let i = 0; i < textPartsCount; i += 1) {
     const isLastPart = i === textPartsCount - 1;
-    result.push(h('text', textParts[i]));
+    result.push(h('text', textParts[i]!));
     !isLastPart && result.push(h('br', []));
   }
   return result;
@@ -87,7 +87,7 @@ const handler = (
   if (hasts.length > 1) {
     hasts = [h('span', hasts)];
   }
-  let hast = hasts[0];
+  let hast = hasts[0]!;
 
   const mathClassName = type === 'equation' ? ['math', 'math-inline'] : [];
   const colorClassName = getColorClassName(annotations.color);
